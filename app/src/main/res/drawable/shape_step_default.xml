@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:shape="oval"
+	>
+	<padding
+		android:bottom="@dimen/step_pending_margin"
+		android:left="@dimen/step_pending_margin"
+		android:right="@dimen/step_pending_margin"
+		android:top="@dimen/step_pending_margin"
+		/>
+	<solid android:color="@color/baseColor"/>
+
+</shape>

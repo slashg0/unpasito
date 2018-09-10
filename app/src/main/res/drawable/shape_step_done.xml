@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape
+			android:shape="oval"
+			>
+			<stroke
+				android:width="2dp"
+				android:color="@color/baseColor"
+				/>
+			<solid android:color="@color/completedColor"/>
+
+
+		</shape>
+	</item>
+	<item>
+		<bitmap
+			android:gravity="fill"
+			android:src="@android:drawable/ic_menu_upload_you_tube"
+			/>
+	</item>
+</layer-list>
