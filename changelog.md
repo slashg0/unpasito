@@ -1,4 +1,6 @@
 #Un Pasito
+######by SlashG
 
-#v1.0.0
-[*] Change 1
+###v0.1.0
+* Created visual styling
+* Implemented Widget with static two-step layout
