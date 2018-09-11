@@ -2,26 +2,48 @@
 <android.support.constraint.ConstraintLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:background="@android:color/background_dark">
+	android:layout_height="match_parent">
 
 	<ViewFlipper
-
-		android:layout_width="@dimen/step_diameter"
-		android:layout_height="@dimen/step_diameter"
+		android:id="@+id/flipper"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintDimensionRatio="1:1"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent">
 
 		<View
+			android:id="@+id/view_default"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_margin="@dimen/step_pending_margin"
-			android:background="@color/baseColor"/>
+
+			android:background="@drawable/shape_step_default"/>
+
+		<android.support.v7.widget.AppCompatTextView
+			android:id="@+id/view_current"
+			android:layout_width="@dimen/step_diameter"
+			android:layout_height="@dimen/step_diameter"
+			app:autoSizeTextType="uniform"
+			android:gravity="center"
+			app:autoSizeMinTextSize="6sp"
+			app:autoSizeMaxTextSize="11sp"
+			android:background="@drawable/shape_step_current"/>
+
+		<ImageView
+			android:id="@+id/view_done"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/shape_step_done"
+			android:padding="@dimen/step_pending_margin"
+			android:scaleType="fitCenter"
+			android:src="@drawable/baseline_done_24"
+			/>
+
 
 	</ViewFlipper>
 
