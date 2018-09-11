@@ -10,8 +10,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import butterknife.BindView;
-
 /**
  * @author SlashG
  * @created 11/09/18
@@ -22,13 +20,9 @@ public class StepView extends FrameLayout {
 	private static final int CURRENT_INDEX = 1;
 	private static final int DONE_INDEX = 2;
 	View layout;
-	@BindView(R.id.flipper)
 	ViewFlipper flipper;
-	@BindView(R.id.view_done)
 	ImageView viewDone;
-	@BindView(R.id.view_default)
 	View viewDefault;
-	@BindView(R.id.view_current)
 	AppCompatTextView viewCurrent;
 
 	public StepView(Context context) {

@@ -8,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import butterknife.BindView;
-
 /**
  * @author SlashG
  * @created 11/09/18
@@ -19,11 +17,8 @@ public class PasitoBar extends FrameLayout {
 	public static final int TYPE_DEFAULT = 298;
 	public static final int TYPE_DONE = 299;
 	public static final int TYPE_CURRENT = 300;
-	@BindView(R.id.step_1)
 	StepView step1View;
-	@BindView(R.id.bar_cl_container)
 	ConstraintLayout constraintLayout;
-	@BindView(R.id.step_2)
 	StepView step2View;
 	View layout;
 
